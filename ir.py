@@ -34,8 +34,8 @@ from bs4 import BeautifulSoup
 # CONFIG - change SEARCH_URL to scrape a different make/model/category
 # ----------------------------------------------------------------------
 BASE_URL = "https://riyasewana.com"
-SEARCH_URL = "https://riyasewana.com/search/cars/nissan"
-OUTPUT_CSV = "riyasewana_nissan.csv"
+SEARCH_URL = "https://riyasewana.com/search/cars/nissan/almera"
+OUTPUT_CSV = "riyasewana_nissan_almera.csv"
 
 REQUEST_DELAY = (1.5, 3.0)   # random polite delay (seconds) between requests
 MAX_RETRIES = 3
@@ -180,7 +180,7 @@ def scrape_all(search_url=SEARCH_URL, output_csv=OUTPUT_CSV):
 
     all_links = set(get_ad_links(first_page_soup))
 
-    for page in range(2, 20 + 1):  # scrape all pages
+    for page in range(2, total_pages + 1):  # scrape all pages
         page_url = f"{search_url}?page={page}"
         print(f"Fetching listing page {page}/{total_pages}: {page_url}")
         polite_sleep()
