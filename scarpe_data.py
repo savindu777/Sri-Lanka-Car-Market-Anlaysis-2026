@@ -1,26 +1,3 @@
-#!/usr/bin/env python3
-"""
-riyasewana_scraper.py
-----------------------
-Scrapes vehicle-ad data from riyasewana.com search results.
-
-Default target: Toyota CHR SUVs
-    https://riyasewana.com/search/suvs/toyota/chr
-
-For each ad it collects:
-    Brand, Model, YOM (year of manufacture), Mileage, Gear, Fuel Type,
-    Engine (cc), Condition, Ad Date, Location, Price, URL
-
-Install dependencies first:
-    pip install requests beautifulsoup4
-
-Run:
-    python riyasewana_scraper.py
-
-Output:
-    riyasewana_toyota_chr.csv  (in the same folder as this script)
-"""
-
 import re
 import csv
 import time
