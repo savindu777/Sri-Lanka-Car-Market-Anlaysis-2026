@@ -11,8 +11,8 @@ from bs4 import BeautifulSoup
 # CONFIG - change SEARCH_URL to scrape a different make/model/category
 # ----------------------------------------------------------------------
 BASE_URL = "https://riyasewana.com"
-SEARCH_URL = "https://riyasewana.com/search/cars/nissan/almera"
-OUTPUT_CSV = "riyasewana_nissan_almera.csv"
+SEARCH_URL = "https://riyasewana.com/search/suvs/mitsubishi/pajero"
+OUTPUT_CSV = "riyasewana_pajero.csv"
 
 REQUEST_DELAY = (1.5, 3.0)   # random polite delay (seconds) between requests
 MAX_RETRIES = 3
